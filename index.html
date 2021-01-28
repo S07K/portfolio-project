@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Webpage</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<nav id="navbar">
 		<div class="nav-links">
-			<a href="#projects">Projects</a>
+            <a href="#welcome-section" style="background: rgb(12, 64, 88);">Intro</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
 		</div>
 	</nav>
 	<section id="welcome-section">
 		<div class="div1">
-			<div class="div2">
-				<h1>Hello I am Brony</h1>
-			</div>
+            <h1 style="font-size: 5rem;">Hello I am Brony</h1>
+            <h2 style="font-size: 2rem;">A Frontend Web Developer</h2>
 		</div>
 	</section>
 	<section id="projects">
-		<div class="project-tile">
-			<a href=""></a>
+        <div id="p">
+            <img src="tribute page.png" alt="a tribute page">
+            <div class="project-tile">
+                <a href="https://codepen.io/S07K/pen/poEKgaV" target="_blank">See the page.</a>
+            </div>
+        </div>
+        <div id="p">
+            <img src="survey form.png" alt="a survey form">
+            <div class="project-tile">
+                <a href="https://codepen.io/S07K/pen/KKgxpoG" target="_blank">See the page.</a>
+            </div>
+        </div>
+	</section>
+	<section id="contact">
+		<div>
+			<button><a href="https://codepen.io/S07K" target="_blank" id="profile-link">Profile Link</a></button>
 		</div>
 	</section>
-	<button id="profile-link"><a href="https://github.io">Profile Link</a></button>
 </body>
 <!-- <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </html>

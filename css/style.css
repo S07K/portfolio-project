@@ -5,6 +5,7 @@ body
     max-width: 100%;
     height: auto;
     background: rgb(66,135,166);
+    font-family: 'Architects Daughter', cursive;
 }
 #navbar
 {
@@ -35,9 +36,8 @@ body
 #welcome-section
 {
     height: 100vh;
-    background: url(https://images.unsplash.com/photo-1492681290082-e932832941e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
-    background-size: cover;
-    color: white;
+    background: rgb(12, 64, 88);
+    color: seashell;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,52 +50,50 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: rgba(94, 172, 182, 0.4); */
-    border: 2px solid rgb(12, 64, 88);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
-    border-radius: 2em;
-    color: rgb(12, 64, 88);
+    color: rgb(66,135,166);
 }
 #project-title 
 {
     background: rgb(12, 64, 88);
+    font-size: 3rem;
     margin: 0px;
     padding: 20px;
-    color: rgb(66,135,166);
+    color: seashell;
     text-align: center;
 }
 #projects
 {
     max-width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: auto;   
     background-color: rgb(12, 64, 88);
     border-radius: 0 0 50% 50%;
-    padding-bottom: 100px;
+    padding-top: 30px;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
 }
-#p
+#row
+{
+    display: flex;
+}
+#tile
 {
     width: auto;
     padding: 10px;
-    margin: 30px;
+    margin: 20px;
     height: auto;
     background: rgb(66,135,166);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
     border-radius: 10px;
 }
-#p img
+#tile img
 {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     border: 2px solid rgb(12, 64, 88);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
 }
-#p img:hover
+#tile img:hover
 {
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0.7);
 }
@@ -105,13 +103,14 @@ body
     height: auto;
     text-align: center;
     padding-bottom: 10px;
+    color: rgb(12, 64, 88);
 }
 .project-tile a
 {
     padding: 10px;
     background-color: rgb(12, 64, 88);
     text-decoration: none;
-    color: white;
+    color: seashell;
     border-radius: 10px;
 }
 .project-tile a:hover
@@ -124,14 +123,54 @@ body
     height: 100vh;
     background-color: rgb(66,135,166);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
+}
+#head
+{
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(12, 64, 88);
+}
+#profiles
+{
+    padding: 10px;
+}
+#profiles:hover
+{
+    transform: scale(1.1);
+}
+#profile-link
+{
+    text-decoration: none;
+    color: rgb(12, 64, 88);
+    font-size: 30px;
+    font-family: 'Telefon Black', Sans-Serif;
+}
+#info
+{
+    border-top: 3px solid rgb(12, 64, 88);
+    text-align: center;
 }
 @media (max-width: 800px)
 {
-    #projects
+    #row
     {
         flex-direction: column;
+    }
+    hr
+    {
+        width: none !important;
+        color: rgb(12, 64, 88) !important;
+    }
+    #navbar
+    {
+        text-align: center;
+    }
+    .nav-links
+    {
+        margin-right: 0px;
     }
 }
